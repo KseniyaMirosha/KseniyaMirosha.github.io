@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Забронировать столик</title>
+	<link rel="stylesheet" href="style-form.css" type="text/css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,700;1,500&family=Alegreya:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&family=Dancing+Script:wght@700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+	<style>
+		@import url("header.css");
+		@import url("footer.css");
+	</style>
+</head>
+<body>
+	<div class="page">
+		<div class="header">
+			<div class="logo">
+				<p>Gustoso</p>
+			</div>
+			<nav class="cl-effect-11">
+				<a href="index.html" data-hover="главная"><span>главная</span></a>
+				<a href="menu.html" data-hover="меню"><span>меню</span></a> 
+				<a href="form.html" data-hover="забронировать"><span>забронировать</span></a>
+				<a href="news.html" data-hover="новости"><span>новости</span></a>
+				<a href="contacts.html" data-hover="контакты"><span>контакты</span></a>
+			</nav>
+			<div class="icons">
+				<div class="wrapper">
+					<ul>
+						<a href="https://www.facebook.com/" title="Мы в Facebook" target=_blank><li><i class="fa fa-facebook" aria-hidden="true"></i></li></a>
+						<a href="https://twitter.com/" title="Мы в Twitter" target=_blank><li><i class="fa fa-twitter" aria-hidden="true"></i></li></a>
+						<a href="https://www.whatsapp.com/" title="Мы в Whatsapp" target=_blank><li><i class="fa fa-whatsapp" aria-hidden="true"></i></li></a>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="hamburger-menu">
+			<input id="menu__toggle" type="checkbox" />
+			<label class="menu__btn" for="menu__toggle">
+				<span></span>
+			</label>
+			<ul class="menu__box">
+				<li><a class="menu__item" href="index.html">Главная</a></li>
+				<li><a class="menu__item" href="menu.html">Меню</a></li>
+				<li><a class="menu__item" href="form.html">Забронировать</a></li>
+				<li><a class="menu__item" href="news.html">Новости</a></li>
+				<li><a class="menu__item" href="gallery.html">Галерея</a></li>
+				<li><a class="menu__item" href="recipes.html">Наши рецепты</a></li>
+				<li><a class="menu__item" href="contacts.html">Контакты</a></li>
+			</ul>
+		</div>
+		<div class="main">
+			<h2>Забронировать столик</h2>
+			<h5>На этой странице вы можете забронировать столик в нашей пекарне. Просто заполните форму ниже:</h5>
+
+			<form method="post" action="http://fe.it-academy.by/TestForm.php">
+				<div class="form-group row">
+					<label for="email" class="col-sm-2 col-form-label">Ваш e-mail</label>
+					<div class="col-sm-10">
+						<input type="email" class="form-control" id="email">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="name" class="col-sm-2 col-form-label">Ваше имя и фамилия</label>
+					<div class="col-sm-10">
+						<input type="text" class="form-control" id="name">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="phone" class="col-sm-2 col-form-label">Ваш телефон</label>
+					<div class="col-auto">
+						<input type="tel" class="form-control" id="phone">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="number" class="col-sm-2 col-form-label">На какое количество гостей необходима бронь?</label>
+					<div class="col-auto">
+						<input type="number" min="1" max="10" class="form-control" id="number">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="date" class="col-sm-2 col-form-label">На какую дату вам необходима бронь?</label>
+					<div class="col-auto">
+						<input type="date" class="form-control" id="date">
+					</div>
+				</div>
+				<div class="form-group row">
+					<label for="time" class="col-sm-2 col-form-label">На какое время вам необходима бронь?</label>
+					<div class="col-auto">
+						<input type="time" class="form-control" id="time">
+					</div>
+				</div>
+				<fieldset class="form-group">
+					<div class="row">
+						<legend class="col-form-label col-sm-2 pt-0">Выберите место столика:</legend>
+						<div class="col-sm-10">
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+								<label class="form-check-label" for="gridRadios1">
+									В пекарне
+								</label>
+							</div>
+							<div class="form-check">
+								<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+								<label class="form-check-label" for="gridRadios2">
+									В баре
+								</label>
+							</div>
+							<div class="form-check disabled">
+								<input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+								<label class="form-check-label" for="gridRadios3">
+									На летней террасе
+								</label>
+							</div>
+						</div>
+					</div>
+				</fieldset>
+				<div class="form-group row">
+					<div class="col-sm-10">
+						<div class="form-check">
+							<input class="form-check-input" type="checkbox" id="gridCheck1" checked>
+							<label class="form-check-label" for="gridCheck1">
+								Я согласен на обработку персональных данных
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="form-group row">
+					<div class="col-sm-10">
+						<button type="submit" class="btn btn-dark">Забронировать</button>
+					</div>
+				</div>
+			</form>
+		</div>
+
+		<div class="footer">
+			<div>
+				<a href="menu.html">Наше меню</a>
+				<p>&#126;</p>
+				<a href="gallery.html">Галерея</a>
+				<p>&#126;</p>
+				<a href="recipes.html">Наши рецепты</a>
+			</div>
+			<div>Gustoso</div>
+			<div>
+				<a href="form.html">Забронировать</a>
+				<p>&#126;</p>
+				<a href="news.html">Новости</a>
+				<p>&#126;</p>
+				<a href="contacts.html">Контакты</a>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+

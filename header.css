@@ -1,0 +1,220 @@
+*,
+*:after,
+*::before {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.header{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	background-color: rgba(39, 47, 45, 0.45);
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	height: 80px;
+}
+.header .logo {
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 10%;
+	flex: 1 1 10%;
+	text-align: center;
+}
+.header .logo p{
+	font-family: 'Dancing Script', cursive;
+	font-size: 35px;
+	color: #ffffff;
+	letter-spacing: 5px;
+}
+/*.header .menu {
+	-webkit-box-flex: 2;
+	-ms-flex: 2 1 50%;
+	flex: 2 1 50%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	margin: 0 20px;
+	text-align: center;
+}
+.header .menu a {
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 70px;
+	flex: 1 1 70px;
+}
+.header .menu a:hover {
+	text-decoration: underline;
+}
+.header .menu div {
+	-webkit-box-flex: 1;
+	-ms-flex: 1 1 5px;
+	flex: 1 1 5px;
+}
+.header .menu a, .header .menu div{
+	text-transform: uppercase;
+	text-decoration: none;
+	font-family: 'Alegreya', serif;
+	color: #ffffff;
+	font-size: 14px;
+	}*/
+	nav a {
+		position: relative;
+		display: inline-block;
+		margin: 15px 25px;
+		outline: none;
+		color: #fff;
+		text-decoration: none;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-weight: 400;
+		text-shadow: 0 0 1px rgba(255,255,255,0.3);
+		font-size: 0.8em;
+	}
+
+	nav a:hover,
+	nav a:focus {
+		outline: none;
+	}
+	nav.cl-effect-11 {
+		display: flex;
+	}
+	nav.cl-effect-11 a span {
+		font-family: 'Alegreya', serif;
+		color: lightgrey;
+		font-size: 14px;
+	}
+	.cl-effect-11 a {
+		padding: 10px 0;
+		border-top: 2px solid burlywood;
+		color: #0972b4;
+		text-shadow: none;
+		font-size: 0.8em;
+		text-decoration: none;
+	} 
+
+	.cl-effect-11 a::before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		overflow: hidden;
+		padding: 10px 0;
+		max-width: 0;
+		border-bottom: 2px solid #fff;
+		color: #fff;
+		content: attr(data-hover);
+		-webkit-transition: max-width 0.5s;
+		-moz-transition: max-width 0.5s;
+		transition: max-width 0.5s;
+		font-family: 'Alegreya', serif;
+		font-size: 14px;
+	}
+
+	.cl-effect-11 a:hover::before,
+	.cl-effect-11 a:focus::before {
+		max-width: 100%;
+	}
+	.header .icons {
+		-webkit-box-flex: 0;
+		-ms-flex: 0 1 100px;
+		flex: 2 1;
+		position: relative;
+	}
+
+	.header .icons .wrapper{
+		position: absolute;
+		top: 20%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
+
+	.icons .wrapper ul{
+		list-style: none;
+		width: 130px;
+		height: 15px;
+		padding-left: 0;
+	}
+
+	.icons .wrapper ul li{
+		float: left;
+		width: 30px;
+		height: 30px;
+		border: 3px solid #fff;
+		margin-right: 15px;
+		border-radius: 25px;
+		position: relative;
+		cursor: pointer;
+		transition: all 0.5s linear;
+	}
+
+	.icons .wrapper ul li:last-child{
+		margin-right: 10px;
+	}
+
+	.icons .wrapper ul li .fa{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+		color: #fff;
+		font-size: 16px;
+		transition: all 0.5s linear;
+	}
+
+	.icons .wrapper ul li:hover{
+		background: #fff;
+		box-shadow: 0 0 30px 3px #fff;
+	}
+
+	.icons .wrapper ul li:hover .fa{
+		color: dimgrey;
+	}
+
+	@media only all and (max-width: 1024px) {
+		.header {
+			height: 100px;
+		}
+		.header .logo {
+			margin-left: 10px;
+		}
+		.header nav a {
+			margin: 15px 15px;
+		}
+		.header .icons .wrapper ul {
+			width: auto;
+		}
+	}
+
+	@media only all and (max-width: 768px) {
+		.header {
+			-webkit-box-orient: vertical;
+			-webkit-box-direction: normal;
+			-ms-flex-direction: column;
+			flex-direction: column;
+			height: 165px;
+		}
+		.header .logo {
+			margin-bottom: -10px;
+		}
+		.header nav.cl-effect-11 {
+			margin-bottom: 35px;
+		}
+	/*.header .menu a {
+		font-size: 18px;
+		margin-right: 10px;
+	}
+	.header .menu div {
+		display: none;
+		}*/
+		.header .icons .wrapper {
+			margin-top: -15px;
+		}
+		.header .icons .wrapper ul {
+			width: 130px;
+			height: 35px;
+		}
+	}
+
+	@media only all and (max-width: 576px) {
+		.header {
+			display: none;
+		}

@@ -1,0 +1,1617 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Наше Меню</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,300;0,700;1,500&family=Alegreya:ital,wght@0,400;0,500;0,700;0,800;0,900;1,400;1,500;1,700;1,800;1,900&family=Dancing+Script:wght@700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style-menu.css" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+	<script src="https://kit.fontawesome.com/6acf0891fb.js" crossorigin="anonymous"></script>
+	<style>
+		@import url("header.css");
+		@import url("footer.css");
+	</style>
+</head>
+<body>
+	<div class="page">
+		<div class="header">
+			<div class="logo">
+				<p>Gustoso</p>
+			</div>
+			<nav class="cl-effect-11">
+				<a href="index.html" data-hover="главная"><span>главная</span></a>
+				<a href="menu.html" data-hover="меню"><span>меню</span></a> 
+				<a href="form.html" data-hover="забронировать"><span>забронировать</span></a>
+				<a href="news.html" data-hover="новости"><span>новости</span></a>
+				<a href="contacts.html" data-hover="контакты"><span>контакты</span></a>
+			</nav>
+			<div class="icons">
+				<div class="wrapper">
+					<ul>
+						<a href="https://www.facebook.com/" title="Мы в Facebook" target=_blank><li><i class="fa fa-facebook" aria-hidden="true"></i></li></a>
+						<a href="https://twitter.com/" title="Мы в Twitter" target=_blank><li><i class="fa fa-twitter" aria-hidden="true"></i></li></a>
+						<a href="https://www.whatsapp.com/" title="Мы в Whatsapp" target=_blank><li><i class="fa fa-whatsapp" aria-hidden="true"></i></li></a>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="hamburger-menu">
+			<input id="menu__toggle" type="checkbox" />
+			<label class="menu__btn" for="menu__toggle">
+				<span></span>
+			</label>
+			<ul class="menu__box">
+				<li><a class="menu__item" href="index.html">Главная</a></li>
+				<li><a class="menu__item" href="menu.html">Меню</a></li>
+				<li><a class="menu__item" href="form.html">Забронировать</a></li>
+				<li><a class="menu__item" href="news.html">Новости</a></li>
+				<li><a class="menu__item" href="gallery.html">Галерея</a></li>
+				<li><a class="menu__item" href="recipes.html">Наши рецепты</a></li>
+				<li><a class="menu__item" href="contacts.html">Контакты</a></li>
+			</ul>
+		</div>
+		<div class="menu">
+			<h2>Наше Меню</h2>
+			<h5>Не знаете, что выбрать? Посмотрите на наше меню!</h5>
+
+			<!-- Навигация с рабочими вкладками -->
+			<div class="navigation">
+				<!-- Nav tabs -->
+				<ul class="nav nav-tabs" id="myTab" role="tablist">
+					<li class="nav-item" role="presentation">
+						<a class="nav-link active" id="cakes-tab" data-toggle="tab" href="#cakes" role="tab" aria-controls="cakes" aria-selected="true">Торты</a>
+					</li>
+					<li class="nav-item" role="presentation">
+						<a class="nav-link" id="pies-tab" data-toggle="tab" href="#pies" role="tab" aria-controls="pies" aria-selected="false">Пирожные</a>
+					</li>
+					<li class="nav-item" role="presentation">
+						<a class="nav-link" id="bread-tab" data-toggle="tab" href="#bread" role="tab" aria-controls="bread" aria-selected="false">Хлеб</a>
+					</li>
+					<li class="nav-item" role="presentation">
+						<a class="nav-link" id="cookies-tab" data-toggle="tab" href="#cookies" role="tab" aria-controls="cookies" aria-selected="false">Печенье</a>
+					</li>
+				</ul>
+				<div class="tab-content">
+					<div class="tab-pane active" id="cakes" role="tabpanel" aria-labelledby="cakes-tab">
+						<div class="row row-cols-1 row-cols-md-1">
+							<div class="col mb-4">
+								<div class="card h-100">
+									<div class="view view-first">
+										<img src="img-menu/cakes/blue.jpg" class="card-img-top" alt="blueberry_cake">
+										<div class="mask">  
+											<h2>Цена:</h2>  
+											<p class="mask">50 р.</p> 
+										</div> 
+									</div>
+									<div class="card-body">
+										<div class="rating">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="far fa-star"></i>
+										</div>
+										<h5 class="card-title">Торт со свежей ежевикой</h5>
+										<p class="card-text">Ванильные коржи и творожный крем со свежей ежевикой, черешней и листиками мяты.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col mb-4">
+								<div class="card h-100">
+									<div class="view view-first">
+										<img src="img-menu/cakes/cookie.jpg" class="card-img-top" alt="cookie_cake">
+										<div class="mask">  
+											<h2>Цена:</h2>  
+											<p class="mask">60 р.</p> 
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="rating">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="far fa-star"></i>
+										</div>
+										<h5 class="card-title">Торт с крошкой из печенья</h5>
+										<p class="card-text">Шоколадные коржи и сливочный крем с вкраплениями шоколадного печенья и фундука.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col mb-4">
+								<div class="card h-100">
+									<div class="view view-first">
+										<img src="img-menu/cakes/straw.jpg" class="card-img-top" alt="chok-cheesecake">
+										<div class="mask">  
+											<h2>Цена:</h2>  
+											<p class="mask">50 р.</p> 
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="rating">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+										</div>
+										<h5 class="card-title">Клубничный торт</h5>
+										<p class="card-text">Ванильные коржи и сливочный крем с кусочками клубники.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col mb-4">
+								<div class="card h-100">
+									<div class="view view-first">
+										<img src="img-menu/cakes/muss.jpg" class="card-img-top" alt="muss">
+										<div class="mask">  
+											<h2>Цена:</h2>  
+											<p class="mask">50 р.</p> 
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="rating">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="far fa-star"></i>
+										</div>
+										<h5 class="card-title">Клубничный муссовый торт</h5>
+										<p class="card-text">Нежнейший муссовый торт с клубникой и свежими ягодами.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col mb-4">
+								<div class="card h-100">
+									<div class="view view-first">
+										<img src="img-menu/cakes/1.jpg" class="card-img-top" alt="vanilla-cheesecake">
+										<div class="mask">  
+											<h2>Цена:</h2>  
+											<p class="mask">50 р.</p> 
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="rating">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+										</div>
+										<h5 class="card-title">Малиновый торт</h5>
+										<p class="card-text">Ванильные коржи и йогуртовый крем со свежей малиной и красной смородиной.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col mb-4">
+								<div class="card h-100">
+									<div class="view view-first">
+										<img src="img-menu/cakes/2.jpg" class="card-img-top" alt="konfetti">
+										<div class="mask">  
+											<h2>Цена:</h2>  
+											<p class="mask">50 р.</p> 
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="rating">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+										</div>
+										<h5 class="card-title">Торт &laquo;Конфетти&raquo;</h5>
+										<p class="card-text">Карамельные коржи с разноцветным сливочным кремом и яркой посыпкой. Идеально для дней рождения!.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col mb-4">
+								<div class="card h-100">
+									<div class="view view-first">
+										<img src="img-menu/cakes/lemon.jpg" class="card-img-top" alt="lemon-cake">
+										<div class="mask">  
+											<h2>Цена:</h2>  
+											<p class="mask">50 р.</p> 
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="rating">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+										</div>
+										<h5 class="card-title">Лимонный торт</h5>
+										<p class="card-text">Лимонные коржи с йогуртным лимонным кремом с кусочками лайма и апельсина.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col mb-4">
+								<div class="card h-100">
+									<div class="view view-first">
+										<img src="img-menu/cakes/roll.jpg" class="card-img-top" alt="roll">
+										<div class="mask">  
+											<h2>Цена:</h2>  
+											<p class="mask">35 р.</p> 
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="rating">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+										</div>
+										<h5 class="card-title">Бисквитный рулет с клубникой</h5>
+										<p class="card-text">Нежный бисквитный рулет с творожным кремом и свежей клубникой.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col mb-4">
+								<div class="card h-100">
+									<div class="view view-first">
+										<img src="img-menu/cakes/spinach.jpg" class="card-img-top" alt="spinach">
+										<div class="mask">  
+											<h2>Цена:</h2>  
+											<p class="mask">65 р.</p> 
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="rating">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+										</div>
+										<h5 class="card-title">Торт &laquo;Лесная сказка&raquo;</h5>
+										<p class="card-text">Сказочный зеленый бисквит с кусочками шпината и нежный крем из сыра маскарпоне с кусочками клубники.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col mb-4">
+								<div class="card h-100">
+									<div class="view view-first">
+										<img src="img-menu/cakes/winter.jpg" class="card-img-top" alt="klukva">
+										<div class="mask">  
+											<h2>Цена:</h2>  
+											<p class="mask">70 р.</p> 
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="rating">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="far fa-star"></i>
+										</div>
+										<h5 class="card-title">Торт &laquo;Зимняя клюква&raquo;</h5>
+										<p class="card-text">Необыкновенные ванильные коржи, пропитанные клюквенным соком и творожный крем на основе рикотты со свежей клюквой.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col mb-4">
+								<div class="card h-100">
+									<div class="view view-first">
+										<img src="img-menu/cakes/car.jpg" class="card-img-top" alt="carrot">
+										<div class="mask">  
+											<h2>Цена:</h2>  
+											<p class="mask">50 р.</p> 
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="rating">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="far fa-star"></i>
+										</div>
+										<h5 class="card-title">Морковный торт</h5>
+										<p class="card-text">Ванильные коржи с тертой морковью и кусочками гречкого ореха и крем на основе сыра маскарпоне.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col mb-4">
+								<div class="card h-100">
+									<div class="view view-first">
+										<img src="img-menu/cakes/vanilla-cheesecake.jpg" class="card-img-top" alt="vanilla-cheesecake">
+										<div class="mask">  
+											<h2>Цена:</h2>  
+											<p class="mask">50 р.</p> 
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="rating">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+										</div>
+										<h5 class="card-title">Чизкейк &laquo;Нью-Йорк&raquo;</h5>
+										<p class="card-text">Классический чизкейк на песочной основе и с нежным сливочным сыром. В лучших американских традициях!</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane" id="pies" role="tabpanel" aria-labelledby="pies-tab">
+						<div class="row row-cols-1 row-cols-md-1">
+							<div class="col mb-4">
+								<div class="card h-100">
+									<div class="view view-first">
+										<img src="img-menu/pies/blueb.jpg" class="card-img-top" alt="pie1">
+										<div class="mask">  
+											<h2>Цена:</h2>  
+											<p class="mask">10 р.</p> 
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="rating">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="far fa-star"></i>
+										</div>
+										<h5 class="card-title">Черничное чудо</h5>
+										<p class="card-text">Черничное муссовое пирожное на шоколадном овсяном печенье.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col mb-4">
+								<div class="card h-100">
+									<div class="view view-first">
+										<img src="img-menu/pies/2.jpg" class="card-img-top" alt="pie2">
+										<div class="mask">  
+											<h2>Цена:</h2>  
+											<p class="mask">10 р.</p> 
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="rating">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="far fa-star"></i>
+										</div>
+										<h5 class="card-title">Брауни &laquo;Бейлиз&raquo;</h5>
+										<p class="card-text">Шоколадный брауни с ванильным кремом и сиропом &laquo;Бейлиз&raquo;.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col mb-4">
+								<div class="card h-100">
+									<div class="view view-first">
+										<img src="img-menu/pies/ambrosia.jpg" class="card-img-top" alt="pie3">
+										<div class="mask">  
+											<h2>Цена:</h2>  
+											<p class="mask">10 р.</p> 
+										</div>
+									</div>
+									<div class="card-body">
+										<div class="rating">
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="fas fa-star"></i>
+											<i class="far fa-star"></i>
+										</div>
+										<h5 class="card-title">Амброзия</h5>
+										<p class="card-text">Творожное суфле с двумя начинками: шоколадной и ванильной в глазури.
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/pies/cannoli.jpg" class="card-img-top" alt="pie4">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">10 р.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Сицилийские канноли</h5>
+											<p class="card-text">Нежный ванильный заварной крем с шоколадными каплями в хрустящей вафле.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/pies/cherry.jpg" class="card-img-top" alt="pie5">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">10 р.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Муссовое пирожное &laquo;Малиновый закат&raquo;</h5>
+											<p class="card-text">Муссовое пирожное с малиновым кремом на песочной основе.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/pies/mur.jpg" class="card-img-top" alt="pie6">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">10 р.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Пирожное &laquo;Муравейник&raquo;</h5>
+											<p class="card-text">Песочно-ореховое пирожное с карамелью.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/pies/3.jpg" class="card-img-top" alt="pie7">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">10 р.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Пирожное &laquo;Тоффи&raquo;</h5>
+											<p class="card-text">Карамельное суфле на песочной основе с начинкой &laquo;Тоффи&raquo;.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/pies/4.jpg" class="card-img-top" alt="pie8">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">10 р.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">&laquo;Розовый фламинго&raquo;</h5>
+											<p class="card-text">Бисквитное пирожное со сливочной начинкой с кусочками малины.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/pies/phy.jpg" class="card-img-top" alt="pie9">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">10 р.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Пирожное &laquo;Мон Ами&raquo;</h5>
+											<p class="card-text">Клубничный мусс с фисташковой крошкой на миндальном бисквите.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/pies/raspber.jpg" class="card-img-top" alt="pie10">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">10 р.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">&laquo;Малиновое сердцечко&raquo;</h5>
+											<p class="card-text">Творожно-малиновое желе на шоколадном бисквите.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/pies/raspberry.jpg" class="card-img-top" alt="pie11">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">10 р.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Муссовое пирожное &laquo;Сладкий мандарин&raquo;</h5>
+											<p class="card-text">Нежный мусс на основе мандаринового сока на песочном печенье.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/pies/red.jpg" class="card-img-top" alt="pie12">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">10 р.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Пирожное &laquo;Красный Бархат&raquo;</h5>
+											<p class="card-text">Шоколадный торт ярко-красного цвета с кремом из сливочного сыра.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/pies/shu.jpg" class="card-img-top" alt="pie13">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">10 р.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Пирожное &laquo;Шу&raquo; ванильное</h5>
+											<p class="card-text">Классическое фрацузское пирожное choux с заварным кремом.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/pies/shu2.jpg" class="card-img-top" alt="pie14">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">10 р.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Пирожное &laquo;Шу&raquo; шоколадное</h5>
+											<p class="card-text">Вариация французского пирожного choux с шоколадным кремом.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/pies/shu3.jpg" class="card-img-top" alt="pie15">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">10 р.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Пирожное &laquo;Шу&raquo; фисташковое</h5>
+											<p class="card-text">Вариация французского пирожного choux с фисташковым кремом.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/pies/van-cannoli.jpg" class="card-img-top" alt="pie16">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">10 р.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Сицилийские канноли</h5>
+											<p class="card-text">Классические итальянские трубочки со сливочным заварным кремом.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane" id="bread" role="tabpanel" aria-labelledby="bread-tab">
+							<div class="row row-cols-1 row-cols-md-1">
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/bread/1.jpg" class="card-img-top" alt="bread1">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">10 р.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Овсяный хлеб</h5>
+											<p class="card-text">Хлеб из овсяной муки с обсыпкой из овсянки.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/bread/2.jpg" class="card-img-top" alt="bread2">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">10 р.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Хлеб &laquo;Прованс&raquo;</h5>
+											<p class="card-text">Пшеничный хлеб с добавлением прованских трав и свежей зелени.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/bread/3.jpg" class="card-img-top" alt="bread3">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">5 р.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Сдобные булочки</h5>
+											<p class="card-text">Мягкие пшеничные булочки.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/bread/4.jpg" class="card-img-top" alt="...">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">10 р.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Хлеб &laquo;Рождественская звезда&raquo;</h5>
+											<p class="card-text">Пшеничная булочка с прослойкой из клюквенного джема.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/bread/5.jpg" class="card-img-top" alt="bread5">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">10 р.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Лепешка &laquo;Италия&raquo;</h5>
+											<p class="card-text">Пшеничная лепешка с чесноком и розмарином.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/bread/6.jpg" class="card-img-top" alt="bread6">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">10 р.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Булка &laquo;Любитель шоколада&raquo;</h5>
+											<p class="card-text">Пшеничная булка с шоколадом.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/bread/7.jpg" class="card-img-top" alt="bread7">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">10 р.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Багет &laquo;Ржаной&raquo;</h5>
+											<p class="card-text">Багет на закваске из ржаной муки.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/bread/8.jpg" class="card-img-top" alt="bread8">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">10 р.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Чиабатта &laquo;Итальянская&raquo;</h5>
+											<p class="card-text">Воздушная пшеничная булка родом из Италии.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/bread/9.jpg" class="card-img-top" alt="bread9">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">10 р.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Хлеб &laquo;Бриошь&raquo;</h5>
+											<p class="card-text">Традиционный сладкий французский хлеб.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/bread/10.jpg" class="card-img-top" alt="bread10">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">10 р.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Хлеб с клюквой</h5>
+											<p class="card-text">Хлеб из пшеничной муки с добавлением йогурта и вяленой клюквы.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/bread/11.jpg" class="card-img-top" alt="bread11">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">10 р.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Булочки для бургеров</h5>
+											<p class="card-text">Классические американские булочки с кунжутом для приготовления бургеров.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/bread/12.jpg" class="card-img-top" alt="bread12">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">10 р.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Плетенка со смородиной</h5>
+											<p class="card-text">Булка из пшеничной муки с джемом из черной смородины.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/bread/13.jpg" class="card-img-top" alt="bread13">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">10 р.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Хлеб &laquo;Бриошь&raquo; с ванильной глазурью</h5>
+											<p class="card-text">Классическая сладкая французская булка, политая ванильной глазурью.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/bread/15.jpg" class="card-img-top" alt="bread14">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">10 р.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Хлеб &laquo;Полезный&raquo;</h5>
+											<p class="card-text">Хлеб из 5 злаков с добавлением семечек подсолнуха и орехов.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/bread/16.jpg" class="card-img-top" alt="bread15">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">10 р.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Хлеб &laquo;Осенние мотивы&raquo;</h5>
+											<p class="card-text">Хлеб из овсяной муки с курагой, браильским орехом и в йогуртовой глазури.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/bread/17.jpg" class="card-img-top" alt="bread16">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">10 р.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Хлеб &laquo;Любитель корицы&raquo;</h5>
+											<p class="card-text">Пшеничный хлеб с корицей.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/bread/18.jpg" class="card-img-top" alt="bread17">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">10 р.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Хлеб &laquo;Летний аромат&raquo;</h5>
+											<p class="card-text">Хлеб из овсяной муки с вяленой клубникой и клубничной глазурью.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/bread/19.jpg" class="card-img-top" alt="bread18">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">10 р.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Хлеб &laquo;Классика&raquo;</h5>
+											<p class="card-text">Хлеб из ржаной муки.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/bread/20.jpg" class="card-img-top" alt="bread19">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">10 р.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Булка &laquo;Рождественская звезда&raquo; с корицей</h5>
+											<p class="card-text">Булка из овсяной муки с корицей.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/bread/22.jpg" class="card-img-top" alt="bread20">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">10 р.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Апельсиновый хлеб</h5>
+											<p class="card-text">Хлеб из пшеничной муки с цедрой апельсина, пропитанный апельсиновым соком.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tab-pane" id="cookies" role="tabpanel" aria-labelledby="cookies-tab">
+							<div class="row row-cols-1 row-cols-md-1">
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/cookies/1.jpg" class="card-img-top" alt="cook1">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">2 р./шт.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Печенье &laquo;Абрикосовый аромат&raquo;</h5>
+											<p class="card-text">Печенье из пшеничной муки с курагой.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/cookies/2.jpg" class="card-img-top" alt="cook2">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">2 р./шт.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Печенье &laquo;Миндальный аромат&raquo;</h5>
+											<p class="card-text">Печенье из пшеничной муки с миндалем.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/cookies/3.jpg" class="card-img-top" alt="cook3">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">2 р./шт.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Печенье &laquo;Тоффи&raquo;</h5>
+											<p class="card-text">Печенье из пшеничной муки с карамелью и вареной сгущенкой.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/cookies/4.jpg" class="card-img-top" alt="cook4">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">2 р./шт.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Печенье &laquo;Шоколадный дуэт&raquo;</h5>
+											<p class="card-text">Шоколадное печенье с ванильной глазурью.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/cookies/5.jpg" class="card-img-top" alt="cook5">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">2 р./шт.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Печенье &laquo;Красный бархат&raquo;</h5>
+											<p class="card-text">Шоколадной печенье ярко-красного цвета с каплями из белого шоколада.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/cookies/6.jpg" class="card-img-top" alt="cook6">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">2 р./шт.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Печенье &laquo;Два шоколада&raquo;</h5>
+											<p class="card-text">Шоколадное печенье с каплями из белого шоколада.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/cookies/7.jpg" class="card-img-top" alt="cook7">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">2 р./шт.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Печенье &laquo;M&amp;M&apos;s&raquo;</h5>
+											<p class="card-text">Шоколадное печенье с конфетками &laquo;M&amp;M&apos;s&raquo;.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/cookies/8.jpg" class="card-img-top" alt="cook8">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">2 р./шт.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Печенье &laquo;Воздушное&raquo;</h5>
+											<p class="card-text">Шоколадное печенье с воздушным карамельным кремом.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/cookies/9.jpg" class="card-img-top" alt="cook9">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">2 р./шт.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Печенье &laquo;Шоколадница&raquo;</h5>
+											<p class="card-text">Глазированное шоколадное печенье.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/cookies/10.jpg" class="card-img-top" alt="cook10">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">2 р./шт.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Миндальное печенье</h5>
+											<p class="card-text">Песочное печенье с ароматом миндаля.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/cookies/11.jpg" class="card-img-top" alt="cook11">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">2 р./шт.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Овсяное печенье &laquo;Золушка&raquo;</h5>
+											<p class="card-text">Глазированное овсяное печенье.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/cookies/12.jpg" class="card-img-top" alt="cook12">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">2 р./шт.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Овсяное печенье &laquo;Классика&raquo;</h5>
+											<p class="card-text">Классическое печенье из овсяных хлопьев.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/cookies/13.jpg" class="card-img-top" alt="cook13">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">2 р./шт.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Печенье &laquo;Единорожек&raquo;</h5>
+											<p class="card-text">Овсяное печенье с разноцветной посыпкой.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/cookies/14.jpg" class="card-img-top" alt="cook14">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">2 р./шт.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Печенье &laquo;Клубничный праздник&raquo;</h5>
+											<p class="card-text">Овсяное печенье в клубничной глазури и с разноцветной посыпкой.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/cookies/15.jpg" class="card-img-top" alt="cook15">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">2 р./шт.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Печенье &laquo;Мадлен&raquo; ванильное</h5>
+											<p class="card-text">Песочное печенье с ванильным масляным кремом.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/cookies/16.jpg" class="card-img-top" alt="cook16">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">2 р./шт.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Печенье &laquo;Мадлен&raquo; шоколадное</h5>
+											<p class="card-text">Песочное печенье с корицей и шоколадным масляный кремом.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/cookies/17.jpg" class="card-img-top" alt="cook17">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">2 р./шт.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Печенье &laquo;Шляпка Де Ла Круз&raquo;</h5>
+											<p class="card-text">Песочная корзинка с ванильным масляным кремом и шоколадным топпингом.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/cookies/18.jpg" class="card-img-top" alt="cook18">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">2 р./шт.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Печенье &laquo;Орешек классический&raquo;</h5>
+											<p class="card-text">Песочное печенье с начинкой из вареной сгущенки.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/cookies/19.jpg" class="card-img-top" alt="cook19">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">2 р./шт.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Мини-штрудель</h5>
+											<p class="card-text">Печенье из слоеного теста с начинкой из яблок и грецкого ореха.</p>
+										</div>
+									</div>
+								</div>
+								<div class="col mb-4">
+									<div class="card h-100">
+										<div class="view view-first">
+											<img src="img-menu/cookies/20.jpg" class="card-img-top" alt="cook20">
+											<div class="mask">  
+												<h2>Цена:</h2>  
+												<p class="mask">2 р./шт.</p> 
+											</div>
+										</div>
+										<div class="card-body">
+											<div class="rating">
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="fas fa-star"></i>
+												<i class="far fa-star"></i>
+											</div>
+											<h5 class="card-title">Мини-штрудель с шоколадом</h5>
+											<p class="card-text">Печенье из слоеного теста с начинкой из шоколада и грецкого ореха.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- Конец навигации -->
+
+			</div>
+			<div class="footer">
+				<div>
+					<a href="menu.html">Наше меню</a>
+					<p>&#126;</p>
+					<a href="gallery.html">Галерея</a>
+					<p>&#126;</p>
+					<a href="recipes.html">Наши рецепты</a>
+				</div>
+				<div>Gustoso</div>
+				<div>
+					<a href="form.html">Забронировать</a>
+					<p>&#126;</p>
+					<a href="news.html">Новости</a>
+					<p>&#126;</p>
+					<a href="contacts.html">Контакты</a>
+				</div>
+			</div>
+		</div>
+
+	</body>
+	</html>

@@ -1,0 +1,163 @@
+
+/*Основные свойства*/
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+	min-width: 320px;
+}
+.page {
+	background: url('images/bg.png') no-repeat fixed;
+	background-size: cover;
+	position: relative;
+}
+/*Гамбургер меню*/
+.hamburger-menu {
+	display: none;
+}
+.hamburger-menu #menu__toggle {
+	opacity: 0;
+}
+.hamburger-menu .menu__btn {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex; /* используем flex для центрирования содержимого */
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;  /* центрируем содержимое кнопки */
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	width: 26px;
+	height: 26px;
+	cursor: pointer;
+	z-index: 6;
+}
+.hamburger-menu .menu__btn > span,
+.hamburger-menu .menu__btn > span::before,
+.hamburger-menu .menu__btn > span::after {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background-color: burlywood;
+}
+.hamburger-menu .menu__btn > span::before {
+	content: '';
+	top: -8px;
+}
+.hamburger-menu .menu__btn > span::after {
+	content: '';
+	top: 8px;
+}
+.hamburger-menu .menu__box {
+	display: block;
+	position: absolute;
+	visibility: hidden;
+	top: 0;
+	left: -100%;
+	width: 300px;
+	height: 100%;
+	margin: 0;
+	padding: 80px 0;
+	list-style: none;
+	text-align: center;
+	background-color: #56534c;
+	-webkit-box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+	box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+}
+.hamburger-menu .menu__item {
+	display: block;
+	padding: 12px 24px;
+	color: #dfc691;
+	font-family: 'Alegreya', serif;
+	font-size: 28px;
+	font-weight: 600;
+	text-decoration: none;
+}
+.hamburger-menu .menu__item:hover {
+	background-color: dimgrey;
+}
+#menu__toggle:checked ~ .menu__btn > span {
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+	top: 0;
+	-webkit-transform: rotate(0);
+	-ms-transform: rotate(0);
+	transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+	top: 0;
+	-webkit-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+	visibility: visible;
+	left: 0;
+	z-index: 5;
+}
+.hamburger-menu .menu__btn > span,
+.hamburger-menu .menu__btn > span::before,
+.hamburger-menu .menu__btn > span::after {
+	-webkit-transition-duration: .25s;
+	-o-transition-duration: .25s;
+	transition-duration: .25s;
+}
+.hamburger-menu .menu__box {
+	-webkit-transition-duration: .25s;
+	-o-transition-duration: .25s;
+	transition-duration: .25s;
+}
+.hamburger-menu .menu__item {
+	-webkit-transition-duration: .25s;
+	-o-transition-duration: .25s;
+	transition-duration: .25s;
+}
+div.text h2 {
+	font-family: 'Alegreya', serif;
+	text-align: center;
+	color: #56534c;
+	margin: 50px auto 5px;
+	font-weight: 700;
+}
+div.text h5 {
+	font-family: 'Alegreya', serif;
+	text-align: center;
+	color: #a47d5e;
+	font-weight: 600;
+}
+div.card.mb-3 {
+	max-width: 80%;
+	margin: 30px auto;
+	border: 1px solid rosybrown;
+	-webkit-box-shadow: 0 25px 54px rgba(105, 80, 58, 0.45);
+	box-shadow: 0 25px 54px rgba(105, 80, 58, 0.45);
+}
+div.row {
+	width: 99%;
+}
+div.card div.row div.col-md-4 img {
+	height: 100%;
+}
+
+@media only all and (max-width: 768px) {
+	div.row {
+		width: 100%;
+		margin: auto;
+	}
+}
+
+@media only all and (max-width: 576px) {
+	.page .hamburger-menu {
+		display: block;
+	}
+	div.page div.text {
+		margin: 5px;
+	}
+}
